@@ -57,7 +57,7 @@ sum_list1 = 0
 prod_list1 = 1
 for i in list1:
     sum_list1 += i
-    prod_list1 += i
+    prod_list1 *= i
     print(sum_list1)
     print(prod_list1)
 
