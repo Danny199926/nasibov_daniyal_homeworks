@@ -45,9 +45,10 @@ print(list3[1::2])
 
 # Сгенерируйте список, который должен составлять 10 элементов.
 # Найдите сумму всех его четных элементов. (встроенную функцию для нахождения суммы использовать нельзя)
-list6 = [random.randint(1, 10) for i in range(11) if i % 2 == 0]
+list6 = [random.randint(1, 10) for i in range(11)]
 sum_elements = 0
 for i in list6:
+    if i % 2 == 0:
     sum_elements += i
 print(sum_elements)
 
