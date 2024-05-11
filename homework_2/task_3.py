@@ -13,3 +13,7 @@ print(S[::3])
 print(S[0] + S[-1])
 print(S.upper())
 print(S[::-1])
+if S.isdigit():
+    print(True)
+else:
+    print(False)
