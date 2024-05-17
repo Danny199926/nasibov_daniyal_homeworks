@@ -70,9 +70,6 @@ for i in list7:
         list7.pop(index)
 print(list7)
 
-list10 = [i for i in range(10) if i % 2 != 0]
-print(list10)
-
 # Напишите программу для нахождения второго наименьшего элемента в списке
 lol = [random.randint(1, 100) for i in range(10)]
 print(lol)
