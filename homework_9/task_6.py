@@ -3,12 +3,12 @@
 # 4. Получить элемент по ключу 5. Удалить элемент по ключу
 # 6. Получить список ключей словаря.
 
-set1 = {'blue': 'синий', 'red': 'красный'}
-set1['cars'] = 3
-print(set1)
-set1[tuple('yellow')] = ['желтый']
-print(set1)
-print(set1['cars'])
-set1.pop('blue')
-print(set1)
-print(list(set1.keys()))
+dict1 = {'blue': 'синий', 'red': 'красный'}
+dict1['cars'] = 3
+print(dict1)
+dict1[tuple('yellow')] = ['желтый']
+print(dict1)
+print(dict1['cars'])
+dict1.pop('blue')
+print(dict1)
+print(list(dict1.keys()))
