@@ -162,3 +162,21 @@ print(f'сумма значений - {sum_of}')
 set1 = {i: i ** 3 for i in range(1, 11)}
 print(set1)
 
+# Напишите программу,
+# которая получает на вход две строки с перечислением интересов и хобби двух пользователей,
+# и вычисляет процент совпадения
+interests = 'хоккей, футбол, шахматы теннис'
+interests2 = 'футбол, волейбол, теннис, гонки'
+list4 = interests.split(', ')
+list5 = interests2.split(', ')
+common_interests = []
+for i in list4:
+    if i in list5:
+        common_interests.append(i)
+total = list4.copy()
+for i in list5:
+    if i not in list4:
+        total.append(i)
+percent = len(common_interests) / len(total) * 100
+print(f'процент совпадения интересов - {percent}%')
+
