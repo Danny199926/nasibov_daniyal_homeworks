@@ -104,14 +104,14 @@ else:
 # С помощью цикла while просите пользователя решить пример, пока он не введет правильный ответ.
 answer = 4
 chance = 3
-while True:
+while chance > 0:
     user_answer = int(input('Решите пример: 2 + 2 = ?: '))
     if user_answer == answer:
         print('Right!')
         break
     else:
-        print('not correct')
         chance -= 1
+        print('not correct')
         if chance == 0:
             print('end of program')
 
