@@ -4,4 +4,4 @@ if x:
     print(True)
 else:
     print(False)
-# Так как None является ложным значением
+# False, так как None является ложным значением

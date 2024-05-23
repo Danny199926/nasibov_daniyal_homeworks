@@ -18,7 +18,7 @@ try:
 except ZeroDivisionError:
     print('error')
 finally:
-    print('the end')
+    print('end of program')
 
 # Даны действительные числа x и y. Получить
 x = int(input('Введите число: '))
