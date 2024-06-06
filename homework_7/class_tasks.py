@@ -49,7 +49,7 @@ list6 = [random.randint(1, 10) for i in range(11)]
 sum_elements = 0
 for i in list6:
     if i % 2 == 0:
-    sum_elements += i
+        sum_elements += i
 print(sum_elements)
 
 # Найти совпадающие элементы двух списков. a = [5,[1,2],2,'r',4,'ee'] b = [4,'we','ee',3,[1,2]]

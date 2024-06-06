@@ -26,3 +26,6 @@ numbers.sort()
 letters.sort(key=len)
 numbers.extend(letters)
 print(numbers)
+
+
+
