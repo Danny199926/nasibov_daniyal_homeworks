@@ -14,7 +14,7 @@ for i in range(len(list)):
             sum_digits = element // 10 + element % 10
             print(f'так как элемент списка четное число, то сумма его цифр равно {sum_digits}')
         else:
-            element == 1
+            element = 1
             print(f'так как элемент списка нечетное число, {element} заменить 1')
     elif isinstance(element, str):
         vowels = 0
