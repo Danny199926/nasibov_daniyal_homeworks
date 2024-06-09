@@ -61,40 +61,32 @@ while i <= 512:
     i = i + i
 
 
-
+# Калькулятор
 while True:
-    operator = input('Введите действие (+, -, *, /, **, //, %): ')
-    if operator == '0':
-        print('Программа завершена')
+    num1 = float(input('Введите число: '))
+    operator = input('Выберите оператор(+, -, *, /, **, //, %): ')
+    num2 = float(input('Введите число: '))
+    if operator in '+':
+        print(num1 + num2)
         break
-    if operator not in ['+', '-', '*', '/', '**', '//', '%']:
-        print('Ошибка')
-        continue
-    try:
-        num1 = float(input('Введите первое число'))
-        num2 = float(input('Введите второе число'))
-        if operator == '+':
-            result = num1 + num2
-        elif operator == '-':
-            result = num1 - num2
-        elif operator == '*':
-            result = num1 * num2
-        elif operator == '/':
-            result = num1 / num2
-            if num2 == 0:
-                print('ошибка: деление на ноль')
-                continue
-        elif operator == '**':
-            result = num1 ** num2
-        elif operator == '//':
-            result = num1 // num2
-        elif operator == '%':
-            result = num1 % num2
-
-        print(f'результат {result}')
-    except ValueError:
-        print('Ошибка: некорректный ввод числа')
-
-
+    elif operator in '-':
+        print(num1 - num2)
+        break
+    elif operator in '*':
+        print(num1 * num2)
+        break
+    elif operator in '/':
+        print(num1 / num2)
+        break
+    elif operator in '**':
+        print(num1 ** num2)
+        break
+    elif operator in '//':
+        print(num1 // num2)
+        break
+    elif operator in '%':
+        print(num1 % num2)
+        break
+print('end of program')
 
 
