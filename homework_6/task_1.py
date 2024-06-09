@@ -7,18 +7,18 @@ import random
 
 chance = 5
 while chance > 0:
-    nums = random.randint(1, 10)
-    nums_of_color = random.randint(1, 2)
+    number = random.randint(1, 10)
+    color = random.randint(1, 2)
+    if color == 1:
+        color = 'Красный'
+    else:
+        color = 'Черный'
     guess_num = int(input('Угадайте число от 1 до 10: '))
     guess_color = int(input('Угадайте цвет красный или черный: '))
-    if nums_of_color == 1:
-        nums_of_color = 'Красный'
-    else:
-        'Черный'
-    if nums == guess_num and nums_of_color == guess_color:
+    if number == guess_num and color == guess_color:
         print('YOU WIN!!!')
     else:
-        print(f'YOU LOSE, номер был {nums}, а цвет {nums_of_color}')
+        print(f'YOU LOSE, номер был {number}, а цвет {color}')
     chance -= 1
     if chance == 5:
         break
