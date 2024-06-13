@@ -4,11 +4,10 @@
 # оставим 18 % от стоимости заказа без учета налога. Налог: 4%. На выходе
 # программа должна отобразить отдельно налог, сумму чаевых и итог.
 
-sum_order = int(input("Введите сумму заказа: "))
-tax = (4 * sum_order) // 100
-tips = (18 * sum_order) // 100
-result = sum_order - tax - tips
-
-print("налог = ", tax)
-print("чаевые = ", tips)
-print("Итоговая сумма =", result)
+sum_order = int(input('Введите сумму заказа: '))
+tax = sum_order * 0.04
+tips = sum_order * 0.18
+result = (sum_order + tax + tips)
+print('Налог: ', tax)
+print('Чаевые: ', tips)
+print('Итоговая сумма: ', result)

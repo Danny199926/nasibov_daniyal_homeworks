@@ -31,6 +31,8 @@ def load_books(file_path):
         return books
 
 
+load_books('books.csv')
+
 # Написать функцию total_price(books), которая принимает на вход список книг и
 # возвращает общую стоимость всех книг.
 def total_price(books):

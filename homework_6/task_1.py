@@ -3,26 +3,26 @@
 # Пользователю дается 5 попыток угадать номер и цвет(Пример. Вводим с клавиатуры: 3 красный)
 # В случае неудачи, вывести на экран правильную комбинацию.
 
-from random import randint
-start = True
-chance = 0
-while start:
-    number_of_guess = (1, 11)
-    number_of_color = (1, 3)
-    user_number = int(input('Угадайте число от 1 до 10: '))
-    user_color = int(input('Угадайте цвет (красный или черный): '))
-    chance += 1
-    if number_of_color == 1:
-        number_of_color = 'красный'
+import random
+
+chance = 5
+while chance > 0:
+    number = random.randint(1, 10)
+    color = random.randint(1, 2)
+    if color == 1:
+        color = 'Красный'
     else:
-        number_of_color = 'черный'
-    if number_of_guess == user_color and number_of_color == user_number:
-        print(f'Поздравляю, вы угадали. Загаданное число было {number_of_guess}, а цвет - {number_of_color}')
+        color = 'Черный'
+    guess_num = int(input('Угадайте число от 1 до 10: '))
+    guess_color = int(input('Угадайте цвет красный или черный: '))
+    if number == guess_num and color == guess_color:
+        print('YOU WIN!!!')
     else:
-        print(f'Вы не угадали')
+        print(f'YOU LOSE, номер был {number}, а цвет {color}')
+    chance -= 1
     if chance == 5:
         break
-print(f'Игра окончена')
+print('GAME OVER')
 
 
 
