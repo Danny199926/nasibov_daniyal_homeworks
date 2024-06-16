@@ -11,20 +11,26 @@
 # sum(3, "1") => ошибка
 # sum(4, 2) = > 6
 
-class Decorator:
-    def sum(self, a, b):
+def validate(func):
+    def wrap(a, b):
         if a == str or b == str:
             raise ValueError
-        else:
-            return a + b
+        return func(a, b)
+
+    return wrap
 
 
-dec = Decorator()
+@validate
+def sum(a, b):
+    return a + b
+
+
 try:
     a = int(input('Введите число: '))
     b = int(input('Введите второе число: '))
-    print(dec.sum(a, b))
+    print(sum(a, b))
 except ValueError:
     print('error')
+
 
 
