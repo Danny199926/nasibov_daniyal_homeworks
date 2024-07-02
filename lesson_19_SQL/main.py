@@ -26,3 +26,13 @@ cursor.execute('''INSERT INTO test_table (num1, num2) VALUES (%s, %s);''', (x, y
 connection.commit()
 cursor.execute('''SELECT * FROM test_table''')
 print(cursor.fetchall())
+# Обновление
+cursor.execute('''UPDATE test_table SET num1=65 WHERE id=4;''')
+connection.commit()
+cursor.execute('''SELECT * FROM test_table''')
+print(cursor.fetchall())
+# Удаление
+cursor.execute('''DELETE FROM test_table WHERE id=2;''')
+connection.commit()
+cursor.execute('''SELECT * FROM test_table''')
+print(cursor.fetchall())
