@@ -16,7 +16,7 @@ user = db.Table(
 )
 print(user.c)
 
-engine = db.create_engine('mysql+mysqlconnector://root:Demonvtapo4kax@localhost:3306/my_data')
+engine = db.create_engine('mysql+mysqlconnector://name:passwordx@localhost:3306/my_data')
 meta.create_all(engine)
 connection = engine.connect()
 

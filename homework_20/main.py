@@ -10,7 +10,7 @@ user = db.Table(
 )
 print(user.c)
 
-engine = db.create_engine('mysql+mysqlconnector://root:Demonvtapo4kax@localhost:3306/test_sqlalchemy')
+engine = db.create_engine('mysql+mysqlconnector://name:password@localhost:3306/test_sqlalchemy')
 meta.create_all(engine)
 connection = engine.connect()
 
