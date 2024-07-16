@@ -7,8 +7,8 @@ auth_url = 'https://github.com/session'
 user = UserAgent().random
 
 data = {
-    'login': 'nasdanny50@gmail.com',
-    'password': 'Demonvtapo4kax',
+    'login': '@gmail.com',
+    'password': 'password',
     'authenticity_token': ''
 }
 headers = {
